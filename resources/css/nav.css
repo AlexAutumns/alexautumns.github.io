@@ -1,0 +1,57 @@
+/* navigation */
+
+.nav-icon {
+    display: none;
+    padding: 0.1rem 0.2rem;
+}
+.nav-text {
+    display: block;
+    padding: 0.1rem 0.2rem;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #494949;
+}
+nav ul {
+    list-style-type: none;
+}
+#home img {
+    width: 35px;
+}
+#portfolio img,
+#socials img {
+    width: 30px;
+}
+nav li a,
+nav li {
+    
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    border-radius: 1rem;
+    background-color: #3a3a3a;
+
+    transition: background-color;
+    cursor: pointer;
+}
+
+#banner {
+    overflow: hidden;
+}
+#banner-picture {
+    width: 100%;
+    
+}
