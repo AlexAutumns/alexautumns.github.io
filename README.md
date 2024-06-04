@@ -2,6 +2,7 @@
 
 ## About ##
 This will be a portfolio site that is made with HTML, CSS, and JavaScript.
+The site is [https](https://alexautumns.github.io)
 
 ### Contents ##
 
