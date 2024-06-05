@@ -1,14 +1,20 @@
 body {
     font-size: 16px;
     font-family: Ubuntu, sans-serif;
-    background-color: #FAF6E9;
+    background-color: #faf6e9;
 }
 
 main {
     margin-top: 30px;
 }
 
-
+/* banner */
+#banner {
+    overflow: hidden;
+}
+#banner-picture {
+    width: 100%;
+}
 
 #about-me {
     display: flex;
@@ -17,12 +23,12 @@ main {
 
 /* skill icons */
 
-#skills{
+#skills {
     display: flex;
     flex-direction: column;
 }
 
-#skill-list{
+#skill-list {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -31,6 +37,57 @@ main {
     margin: 10px;
     width: 40px;
 }
-.skill-icon #icon-css{
+.skill-icon #icon-css {
     width: 10px;
+}
+
+/* project list */
+
+#projects-folder a {
+    text-decoration: none;
+    color: black;
+}
+
+#projects-folder ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.project {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 300px;
+    min-width: 100px;
+
+    margin: 15px;
+    background-color: #ece8d9;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px transparent;
+}
+
+@keyframes colorCycle {
+    0% {
+        border: 2px #3498db solid;
+    }
+    25% {
+        border: 2px #e74c3c solid;
+    }
+    50% {
+        border: 2px #2ecc71 solid;
+    }
+    75% {
+        border: 2px #f39c12 solid;
+    }
+    100% {
+        border: 2px #3498db solid;
+    }
+}
+
+.project:hover {
+    scale: 1.05;
+    transition: scale 0.1s ease-in-out;
+    cursor: pointer;
+    animation: colorCycle 2.5s infinite;
 }
