@@ -1,12 +1,14 @@
 /* navigation */
+header {
+    font-size: 16px;
+    z-index: 100;
+}
 
 .nav-icon {
     display: none;
-    padding: 0.1rem 0.2rem;
 }
 .nav-text {
     display: block;
-    padding: 0.1rem 0.2rem;
 }
 
 nav {
@@ -20,30 +22,69 @@ nav {
 }
 nav ul {
     list-style-type: none;
+    align-items: center;
 }
 #home img {
-    width: 35px;
+    width: 3em;
 }
-#portfolio img,
-#socials img {
-    width: 30px;
+#projects img,
+#contacts img {
+    width: 3em;
 }
+
 nav li a,
 nav li {
-    
     float: right;
-    
     text-align: center;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5em 0.5rem;
     color: white;
     text-decoration: none;
+    margin: auto 10px;
 }
 
 nav li a:hover {
-    border-radius: 1rem;
+    border-radius: 1em;
     background-color: #3a3a3a;
 
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 
+@media only screen and (max-width: 700px) {
+    nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-bottom: 1px;
+        padding-bottom: 2px;
+        margin-top: 1px;
+        padding-top: 1px;
+        align-items: center;
+    }
+    
+    nav li{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+    .nav-text{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    header {
+        font-size: 45px;
+    }
+}

@@ -2,18 +2,24 @@ body {
     font-size: 16px;
     font-family: Ubuntu, sans-serif;
     background-color: #faf6e9;
+    padding: 1rem 10%;
 }
 
 main {
-    margin-top: 30px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fffdf6;
+    border-radius: 10px;
 }
 
 /* banner */
 #banner {
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 #banner-picture {
     width: 100%;
+    background-color: #494949;
 }
 
 #about-me {
@@ -26,45 +32,48 @@ main {
 #skills {
     display: flex;
     flex-direction: column;
+    padding: 0px;
 }
 
 #skill-list {
     list-style-type: none;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
+
 .skill-icon {
-    margin: 10px;
-    width: 40px;
+    width: 60%;
+    align-self: center;
 }
-.skill-icon #icon-css {
-    width: 10px;
-}
+
 
 /* project list */
-
-#projects-folder a {
-    text-decoration: none;
-    color: black;
+#projects-folder {
+    width: 100%;
 }
 
 #projects-folder ul {
     display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    justify-content: space-between;
+    align-content: space-between;
 }
 .project {
     display: flex;
     justify-content: center;
     list-style: none;
-    width: 300px;
+    width: 60%;
     min-width: 100px;
 
     margin: 15px;
     background-color: #ece8d9;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px transparent;
+}
+
+#project1 h3,
+    #project3 h3 {
+        font-size: 1.5rem;
 }
 
 @keyframes colorCycle {
@@ -90,4 +99,42 @@ main {
     transition: scale 0.1s ease-in-out;
     cursor: pointer;
     animation: colorCycle 2.5s infinite;
+}
+
+
+
+@media only screen and (max-width: 700px){
+
+    body {
+        padding: 1rem 5%;
+    }
+
+    #projects-folder ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .project {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    body {
+        font-size: 25px;
+    }
+
+    #project1 h3,
+    #project3 h3 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body {
+        font-size: 39px;
+    }
+    #project1 h3,
+    #project3 h3 {
+        font-size: 3.4rem;
+    }
 }
