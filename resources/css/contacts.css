@@ -22,17 +22,21 @@ main {
     justify-content: space-evenly;
 }
 
+#email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email img {
+    width: 30%;
+}
+
 #email .text {
-    display: none;
     font-size: 0.8em;
 }
 
-button {
-    padding: 0px;
-    border: none;
-    background: none;
-    scale: 1.3;
-}
 
 @media only screen and (min-width: 2560px) {
     body {
