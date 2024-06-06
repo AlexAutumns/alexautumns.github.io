@@ -29,11 +29,8 @@ main {
     align-items: center;
 }
 
-#email img {
-    width: 30%;
-}
 
-#email .text {
+#email p {
     font-size: 0.8em;
 }
 
