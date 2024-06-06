@@ -63,6 +63,7 @@ main {
     list-style: none;
     width: 60%;
     min-width: 100px;
+    position: relative;
 
     margin: 15px;
     background-color: #ece8d9;
