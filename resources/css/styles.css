@@ -12,6 +12,11 @@ main {
     border-radius: 10px;
 }
 
+header {
+    z-index: 100;
+}
+
+
 /* banner */
 #banner {
     overflow: hidden;
@@ -54,8 +59,8 @@ main {
 
 #projects-folder ul {
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-evenly;
+    align-content: center;
 }
 .project {
     display: flex;
@@ -65,9 +70,10 @@ main {
     min-width: 100px;
     position: relative;
 
-    margin: 15px;
+    margin: 1em;
     background-color: #ece8d9;
-    padding: 10px;
+    padding: 1em;
+
     border-radius: 20px;
     border: 2px transparent;
 }

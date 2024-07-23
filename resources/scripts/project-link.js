@@ -2,12 +2,13 @@
 let cards = [
     document.getElementById("project1"),
     document.getElementById("project2"),
-    document.getElementById("project3")
+    document.getElementById("project3"),
 ];
 let urls = [
     "https://github.com/AlexAutumns/Aki-RobotCafe",
     "https://github.com/AlexAutumns/python-basic-calculator",
-    "https://alexautumns.github.io/random-quote-generator/"
+    "https://alexautumns.github.io/random-quote-generator/",
+    "https://github.com/AlexAutumns/AutumnsRedditAPI,",
 ];
 
 // Function to open a new tab with the specified URL
@@ -19,7 +20,7 @@ function openNewTab(index) {
 
 // Assign onclick events to the card elements
 cards.forEach((card, index) => {
-    card.onclick = function() {
+    card.onclick = function () {
         openNewTab(index);
     };
 });
