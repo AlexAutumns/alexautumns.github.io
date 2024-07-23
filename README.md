@@ -11,4 +11,4 @@ My site will feature these programming projects
 - Barista (Python)
 - Random Quote Generator (JavaScript)
 - Basic Calculator (Python)
-
+- Autumn Reddit (React)
