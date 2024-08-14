@@ -3,6 +3,7 @@ let cards = [
     document.getElementById("project1"),
     document.getElementById("project2"),
     document.getElementById("project3"),
+    document.getElementById("project4"),
 ];
 let urls = [
     "https://github.com/AlexAutumns/Aki-RobotCafe",
