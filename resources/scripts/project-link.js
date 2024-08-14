@@ -1,4 +1,5 @@
 // Define card elements and their corresponding URLs
+/*
 let cards = [
     document.getElementById("project1"),
     document.getElementById("project2"),
@@ -25,3 +26,4 @@ cards.forEach((card, index) => {
         openNewTab(index);
     };
 });
+*/
