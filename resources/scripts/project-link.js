@@ -8,7 +8,7 @@ let urls = [
     "https://github.com/AlexAutumns/Aki-RobotCafe",
     "https://github.com/AlexAutumns/python-basic-calculator",
     "https://alexautumns.github.io/random-quote-generator/",
-    "https://github.com/AlexAutumns/AutumnsRedditAPI,",
+    "https://github.com/AlexAutumns/AutumnsRedditAPI",
 ];
 
 // Function to open a new tab with the specified URL
