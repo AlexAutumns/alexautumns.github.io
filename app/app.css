@@ -1,0 +1,79 @@
+/* Import Google Font (example: Roboto) */
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Reggae+One&family=RocknRoll+One&family=Stick&family=Yuji+Boku&display=swap");
+
+/*Font Classes*/
+.rocknroll-one-regular {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.mochiy-pop-p-one-regular {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.stick-regular {
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.reggae-one-regular {
+    font-family: "Reggae One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.yuji-boku-regular {
+    font-family: "Yuji Boku", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Import Tailwind base layers */
+@import "tailwindcss";
+
+@theme {
+    /* Default sans-serif stack (already in template) */
+    --font-sans:
+        "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* New Google font */
+    --font-roboto: "Roboto", sans-serif;
+
+    /* Local font example */
+    --font-custom: "MyCustomFont", sans-serif;
+
+    --font-rocknroll-one: "RocknRoll One", sans-serif;
+    --font-mochiy-pop-p-one: "Mochiy Pop P One", sans-serif;
+    --font-stick: "Stick", sans-serif;
+    --font-reggae-one: "Reggae One", system-ui;
+    --font-yuji-boku: "Yuji Boku", serif;
+}
+
+/* Global HTML & body styles */
+html,
+body {
+    @apply bg-white dark:bg-gray-950;
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+/* ANIMATIONS */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Slow constant marquee */
+.animate-marquee {
+    display: inline-flex;
+    animation: marquee 60s linear infinite; /* slow, smooth scroll */
+    will-change: transform; /* GPU acceleration */
+}
