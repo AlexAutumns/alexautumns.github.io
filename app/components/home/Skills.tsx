@@ -17,9 +17,9 @@ const Skills = () => {
                         <img
                             src={skill.icon}
                             alt={skill.name}
-                            className="w-28 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 mb-2 transition-transform duration-300 group-hover:scale-110"
+                            className="w-30 h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 mb-2 transition-transform duration-300 group-hover:scale-110"
                         />
-                        <p className="text-center text-orange-200 text-base md:text-lg font-medium transition-opacity duration-300 opacity-0 group-hover:opacity-100 mt-4">
+                        <p className="text-center text-orange-100 text-base md:text-lg font-medium transition-opacity duration-300 opacity-0 group-hover:opacity-100 mt-4">
                             {skill.name}
                         </p>
                     </div>
