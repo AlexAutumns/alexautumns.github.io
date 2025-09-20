@@ -1,14 +1,6 @@
 # Portfolio #
 
 ## About ##
-This will be a portfolio site that is made with HTML, CSS, and JavaScript.
+This is a portfolio website built to showcase projects and skills.
+It uses React, Tailwind, and TypeScript for a modern web experience.
 Here is the site [link](https://alexautumns.github.io)
-
-### Contents ##
-
-My site will feature these programming projects
-
-- Barista (Python)
-- Random Quote Generator (JavaScript)
-- Basic Calculator (Python)
-- Autumn Reddit (React)
